@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.main.MainFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/faces"
+        android:id="@+id/imagePreview"/>
+
+
+    <Button
+        android:id="@+id/checkModBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_button"
+        android:text="@string/check_mod" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/openCamBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_add_a_photo_24"
+            android:padding="10dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="10dp"
+            android:text="@string/camera"/>
+        <Button
+            android:id="@+id/loadImageBtn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_add_photo_alternate_black_24"
+            android:background="@drawable/rounded_button"
+            android:padding="10dp"
+            android:text="@string/load_image"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
